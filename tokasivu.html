@@ -1,0 +1,82 @@
+<!--
+    Harjoitus 2
+
+    (a) Toteuta monipuolisempi HTML-sivu
+
+    Toteuta hyvien käytäntöjen mukainen HTML-sivu, jossa käytät asianmukaisten
+    meta-elementtien (doctype, html, head ja body) lisäksi sisällön kuvaamisen
+    elementeistä ainakin otsikko-, tekstikappale-, lista- tai taulukko-,
+    linkki- ja kuva-elementtejä. Tässä itse sisällöllä ei ole väliä, mutta
+    tuota kuitenkin tekstisisältösi itse ja käytä itse tuottamaasi kuvaa tai
+    linkitä julkisesti saatavilla olevaan kuvaan. Voit myös käyttää oheista
+    kuvaa (ja videota), jos haluat.
+
+    Tee ratkaisusi yhteen HTML-tiedostoon (esimerkiksi tokasivu.html). Huomioi
+    kuitenkin, että jos teet b-osan lisäät tähän sivuun vielä viittauksen
+    tyylitiedostoon, eli muokkaat tätä tiedostoa hieman b-osassa. Jos käytät
+    itse tuottamaasi kuvaa, on sen kätevintä olla omana tiedostonaan samassa
+    hakemistossa .html-tiedostosi kanssa.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=1.0">
+        <title>Toinen verkkosivu</title>
+        <link rel="stylesheet" href="tyylit.css">
+    </head>
+
+    <body>
+        <h1>Otsikot (h1) &#128516;</h1>
+        <h2>Toinen otsikko (h2) &#x1F36A;</h2>
+        <p>HTML:ssä on otsikkoelementit h1-h6.</p>
+
+        <h1>Listat</h1>
+        <p>HTML:ssä on kahden tyyppisiä listoja, numeroitu ja numeroimaton:</p>
+
+        <ol>
+            <li>Ensimmäinen listan kohta.</li>
+            <li>Toinen listan kohta.</li>
+        </ol>
+
+        <p>Numeoroimaton lista:</p>
+        <ul>
+            <li>Ensimmäinen listan kohta.</li>
+            <li>Toinen listan kohta.</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>Otsikko 1</th>
+                <th>Otsikko 2</th>
+            </tr>
+            <tr>
+                <td>Kenttä 1</td>
+                <td>Kenttä 2</td>
+            </tr>
+            <tr>
+                <td>Kenttä 1</td>
+                <td>Kenttä 2</td>
+            </tr>
+        </table>
+
+        <p>Linkki omalle toiselle HTML-sivulle (samaan ikkunaan / välilehteen):</p>
+        <a href="ekasivu.html">Oma ensimmäinen web-sivu &#128526;</a>
+
+        <p>Linkki ulkoiselle HTML-sivulle (uuteen välilehteen):</p>
+        <a href="https://www.seamk.fi" target="_blank">Seamkin etusivu</a>
+
+        <h2>Kuva</h2>
+        <img src="kuva.gif" alt="Kuvankaappaus" width="320", height="200">
+
+        <h2>Video &#127757;</h2>
+        <p>Esimerkkivideo osoitteesta
+            <a href="https://file-exam.com">https://file-exam.com</a>
+        </p>
+        <video width="320", height="200" controls autoplay muted>
+            <source src="video.mp4" type="video/mp4">
+            Selaimesi ei tue videoelementtejä.
+        </video>
+    </body>
+</html>
